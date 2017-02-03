@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="project1_Domains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_2" id="07B869DC-B0EC-5735-254C-8C2C5C2389AC">
+         <createdBy>jk1324</createdBy>
+         <createdTime>2017-02-03 22:42:20 UTC</createdTime>
+         <ownerDesignName>project1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>2</dataTypeSize>
+         <fileName>project1_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_0" id="26311265-E18D-FAFE-F129-802BA37DB2B0">
+         <createdBy>jk1324</createdBy>
+         <createdTime>2017-02-03 22:42:20 UTC</createdTime>
+         <ownerDesignName>project1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>project1_Domains</fileName>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_255" id="E62EA183-F0F6-814C-D548-BF5711ADA6D8">
+         <createdBy>jk1324</createdBy>
+         <createdTime>2017-02-03 22:42:20 UTC</createdTime>
+         <ownerDesignName>project1</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>255</dataTypeSize>
+         <fileName>project1_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>

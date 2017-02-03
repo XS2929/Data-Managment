@@ -27,7 +27,7 @@ prompt APPLICATION 107899 - Project1
 -- Application Export:
 --   Application:     107899
 --   Name:            Project1
---   Date and Time:   05:03 Friday February 3, 2017
+--   Date and Time:   22:18 Friday February 3, 2017
 --   Exported By:     XS2929@UTEXAS.EDU
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -108,7 +108,7 @@ wwv_flow_api.create_flow(
 ,p_rejoin_existing_sessions=>'N'
 ,p_csv_encoding=>'Y'
 ,p_last_updated_by=>'XS2929@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20170203003246'
+,p_last_upd_yyyymmddhh24miss=>'20170203212619'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_ui_type_name => null
 );
@@ -11535,7 +11535,7 @@ wwv_flow_api.create_page(
 ,p_protection_level=>'C'
 ,p_cache_mode=>'NOCACHE'
 ,p_last_updated_by=>'XS2929@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20170203001509'
+,p_last_upd_yyyymmddhh24miss=>'20170203212619'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(4148971927413695770)
@@ -11646,7 +11646,7 @@ wwv_flow_api.create_page_item(
 ,p_item_sequence=>20
 ,p_item_plug_id=>wwv_flow_api.id(4148971927413695770)
 ,p_use_cache_before_default=>'NO'
-,p_prompt=>'New'
+,p_prompt=>'Student ID'
 ,p_source=>'STUDENT_STUDENT_ID'
 ,p_source_type=>'DB_COLUMN'
 ,p_display_as=>'NATIVE_SELECT_LIST'
@@ -11670,7 +11670,7 @@ wwv_flow_api.create_page_item(
 ,p_item_sequence=>30
 ,p_item_plug_id=>wwv_flow_api.id(4148971927413695770)
 ,p_use_cache_before_default=>'NO'
-,p_prompt=>'New'
+,p_prompt=>'Club ID'
 ,p_source=>'CLUB_CLUB_ID'
 ,p_source_type=>'DB_COLUMN'
 ,p_display_as=>'NATIVE_SELECT_LIST'

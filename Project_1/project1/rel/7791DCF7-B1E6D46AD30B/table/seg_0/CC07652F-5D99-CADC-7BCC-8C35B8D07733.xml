@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CC07652F-5D99-CADC-7BCC-8C35B8D07733" name="Address">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>A044FDA0-745E-C4CF-DD41-6D182A39690C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ZIP" id="C365F788-F6B5-931C-14E3-3B345C0A2F08">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>FBF69575-C485-6C6B-24ED-37D5D29909D0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>26311265-E18D-FAFE-F129-802BA37DB2B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Address_ID" id="E35F19C7-C82E-D8F9-A943-B255A291CFB5">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>61C4AE75-30C0-F271-7DA4-BB19B42EC0A6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>26311265-E18D-FAFE-F129-802BA37DB2B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>Address_Address_ID_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>Address_Address_ID_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="City" id="443F311D-76B3-2F78-4F72-163C6CA17375">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>EAF44096-9668-5926-DCF7-C7FCA19F4DB9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E62EA183-F0F6-814C-D548-BF5711ADA6D8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="State" id="0BCB6E72-CEC2-C96A-C95E-33167CBF076E">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>151C4680-692B-1AAD-0BE5-023EE6C8D8D4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>07B869DC-B0EC-5735-254C-8C2C5C2389AC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Street_Address" id="F6FB783A-5CF4-F6DD-C511-8B29EE4A739A">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>E21F9514-C489-5E4F-2EAC-0DE4C7AD39AE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E62EA183-F0F6-814C-D548-BF5711ADA6D8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9AB4A1B5-36C7-4A19-3A9D-DD57B9A63C2C" name="Address_PK">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>A22FF23A-1AFB-7BBA-31EC-FB5FA6BAFFE3</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E35F19C7-C82E-D8F9-A943-B255A291CFB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

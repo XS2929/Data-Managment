@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9DFCF366-D8B8-A234-3ABC-05F59E818072" name="Adviser">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>3B796BE8-9376-5ECC-763C-AAB6B4FA3B15</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Adviser_ID" id="CB6423ED-B633-DFF9-D22A-A398E01D618C">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>6140270A-E72D-B90B-7C72-7E6558BA2C9F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>26311265-E18D-FAFE-F129-802BA37DB2B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>Adviser_Adviser_ID_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>Adviser_Adviser_ID_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="Adviser_Name" id="E04372CF-85A5-BA44-53A0-8F86572472BF">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>4772A57E-14D6-5114-4AE3-6B869B55400E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E62EA183-F0F6-814C-D548-BF5711ADA6D8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Major" id="8D607BD4-BA9E-0AFE-076B-C2DB0170277D">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>FCA1AA41-5804-2DF9-6693-A35B7A3D383B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E62EA183-F0F6-814C-D548-BF5711ADA6D8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1016DA87-D408-4964-C8F4-0EDB5612CFF1" name="Adviser_PK">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>9002A33A-1E89-36E4-54A6-8646F7904DB9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB6423ED-B633-DFF9-D22A-A398E01D618C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

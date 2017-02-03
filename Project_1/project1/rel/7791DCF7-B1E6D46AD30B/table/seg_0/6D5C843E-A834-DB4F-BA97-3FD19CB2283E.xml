@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6D5C843E-A834-DB4F-BA97-3FD19CB2283E" name="Student">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>540DB790-56E2-9B1A-D04C-4DB08DEADFA9</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Name" id="D9724A2B-DE63-6431-33B2-C625520CBCD5">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>BBCE26E7-C2A7-923B-4FEC-1655AB02BABA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E62EA183-F0F6-814C-D548-BF5711ADA6D8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Student_ID" id="CF099183-CE43-73D3-CE61-9D9A62B1B003">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>E513CAA1-381E-9564-2AB9-B237D661AB04</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>26311265-E18D-FAFE-F129-802BA37DB2B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>Student_Student_ID_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>Student_Student_ID_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="YEAR" id="F481E5C9-28B6-5EE5-7E9F-62AD559651B4">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>177AC77B-D093-01C1-0BE6-16871E92BEC4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E62EA183-F0F6-814C-D548-BF5711ADA6D8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Major" id="76E8D027-6838-EBF7-F57B-E5EBB880F15A">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>CDBA4F7E-1DF1-27C4-FACC-E0F60F8CE516</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E62EA183-F0F6-814C-D548-BF5711ADA6D8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Address_ID" id="38DCFEFD-94BE-A8EA-49B0-77206BBA2E33">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>AF80E0BA-64B2-91E2-0680-DDE955D5A585</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>26311265-E18D-FAFE-F129-802BA37DB2B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FC863C1-61BE-74E5-D1C0-0D0CC93F3FD7" referredColumn="E35F19C7-C82E-D8F9-A943-B255A291CFB5"/>
+</associations>
+</Column>
+<Column name="Adviser_ID" id="E805BF6E-F8DD-BA0C-7D77-B719D2621435">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>5ADA8B12-2E8A-BADE-F90C-CFA4D1329817</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>26311265-E18D-FAFE-F129-802BA37DB2B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9CEB6F36-73C4-8A16-715D-67B915423A1E" referredColumn="CB6423ED-B633-DFF9-D22A-A398E01D618C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CD4CEDEF-B7F7-0985-1372-6AB24A224C74" name="Student_PK">
+<sourceDDLFile>project1.ddl</sourceDDLFile>
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<importedID>71BCD042-10FB-8ECE-DCEA-535AEF38682E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF099183-CE43-73D3-CE61-9D9A62B1B003"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6038241D-F76F-372C-18FF-137FE22194A3" name="Adviser">
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E805BF6E-F8DD-BA0C-7D77-B719D2621435"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD5FADA6-A4C6-BCBA-5DFC-4902F5D85613" name="Residence">
+<createdBy>jk1324</createdBy>
+<createdTime>2017-02-03 22:42:20 UTC</createdTime>
+<ownerDesignName>project1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38DCFEFD-94BE-A8EA-49B0-77206BBA2E33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
