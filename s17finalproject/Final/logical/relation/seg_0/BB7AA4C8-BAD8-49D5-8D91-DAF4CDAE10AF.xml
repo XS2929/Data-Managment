@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ARL_ACC_TRANSACTIONS_TO_CTR_FROM_TRANSACTIONS_1" directorySegmentName="seg_0" id="BB7AA4C8-BAD8-49D5-8D91-DAF4CDAE10AF">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:34:14 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<sourcePk>0CBA39B3-BD00-6840-D07A-D8F40720E9AC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>18DC9B27-1BB0-A6E7-E1BD-428D14D8436C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F53E0086-E09B-B99C-67F4-51B3E55B4947</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

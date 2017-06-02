@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CTR_STATUS_CODES_TO_CTR_CYR_STATUSES" directorySegmentName="seg_0" id="F1350F8E-5EAA-A9C8-D32D-666D5028B5F3">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:43:51 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<sourcePk>DCDA45AD-24D5-AD65-2FC0-34A295FC7507</sourcePk>
+<targetPk>34DB1662-4DD0-C604-5762-B28EFBA5EEB4</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>818022ED-53F1-2B7D-DFC0-18A8692C3757</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1E453FF6-974A-CAED-CF11-5773C0F1ABEE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

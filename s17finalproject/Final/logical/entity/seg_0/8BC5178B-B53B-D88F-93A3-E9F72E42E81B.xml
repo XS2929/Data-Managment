@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8BC5178B-B53B-D88F-93A3-E9F72E42E81B" name="S17_25_CTR_C">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:07:28 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COMMENT_ID" id="F9F1C649-89D6-5A4D-6A67-368483A1870E">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:07:46 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COMMENTS" id="0D537772-05AC-6950-D568-A71AB10D598A">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:07:46 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COMMENT_ENTRY_DATE" id="437C4D88-ED42-934F-2567-56EB7A55D19D">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:07:46 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CTR_NUMBER" id="7B994D30-7973-1920-8214-CB90E7B1FD5B">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:10:45 UTC</createdTime>
+<generatorID>982674BD-4BAD-F963-C021-51CD47BE0BC7</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6726B42F-CB3F-F682-5644-6A2549CBBCB7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMPLOYEE_ID" id="D7E0ECD7-FA2E-9A8E-A4BB-EB2BF51005F5">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:11:17 UTC</createdTime>
+<generatorID>0BDEB7A7-0D50-2F34-373C-5B15974E5127</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>33F30518-8BD7-81BC-A0DB-6B88F67074C4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COMMENT_TYPE_CODE" id="2FAA7599-7588-5C1D-47C7-70D9CF4E90ED">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:29:30 UTC</createdTime>
+<generatorID>F445642B-D588-DCCE-F77C-E223F82200BE</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>D7C705F9-2BDF-EC1B-FEA8-013412EC90C9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0B998B20-2A35-9149-F2A2-F1D4BA9E7550" name="CTR_COMMENTS PK">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:08:05 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F9F1C649-89D6-5A4D-6A67-368483A1870E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

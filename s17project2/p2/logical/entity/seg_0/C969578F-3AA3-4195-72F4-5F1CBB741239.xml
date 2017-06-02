@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C969578F-3AA3-4195-72F4-5F1CBB741239" name="SESSION">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:46:21 UTC</createdTime>
+<ownerDesignName>p2</ownerDesignName>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SESSION_ID" id="275AE9D4-5FDC-A6A2-717D-61AB48135FEF">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:46:28 UTC</createdTime>
+<ownerDesignName>p2</ownerDesignName>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INSTRUCTOR_ID" id="34A29479-7473-D10B-57F2-29576F2477DD">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:49:04 UTC</createdTime>
+<generatorID>D24A9E13-298C-9413-ECAD-4EAC630580F6</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="true"/>
+</engineerTo>
+<referedAttribute>D8D2A24A-2972-8FC0-A664-056E62E63059</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INSTRUCTOR_ID1" id="676F4ACE-B5CC-8A74-BD62-E7921E449B20">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:49:15 UTC</createdTime>
+<generatorID>3C77B7A8-811E-1545-657A-DE4C8C1D0E09</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="true"/>
+</engineerTo>
+<referedAttribute>D8D2A24A-2972-8FC0-A664-056E62E63059</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNIQUE_NUMBER" id="37D81A3A-7A3C-D9CE-7F83-0BF7CED06CAC">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:49:21 UTC</createdTime>
+<generatorID>9C5B4337-C2E6-460E-D175-81BF1AE13E2C</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="true"/>
+</engineerTo>
+<referedAttribute>1923070C-6328-BFE7-7B6D-3ECF3A8B4132</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEPARTMENT_ID" id="C80E2216-4638-23F3-74E6-B329986C4EC5">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:49:28 UTC</createdTime>
+<generatorID>0367234A-5528-B3B3-789D-FA80F48686E8</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="true"/>
+</engineerTo>
+<referedAttribute>8DA8BBD1-14DD-3948-5C82-6080A0AF7BDB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E7B18271-9399-4145-EBCC-4D0BB0F4A8D5" name="SESSION PK">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:46:36 UTC</createdTime>
+<ownerDesignName>p2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>275AE9D4-5FDC-A6A2-717D-61AB48135FEF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

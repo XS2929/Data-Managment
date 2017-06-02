@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DC70D243-E8F1-DAAF-75DC-F47194B11B43" name="PROFESSOR">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:45:43 UTC</createdTime>
+<ownerDesignName>p2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="false"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>1BADC937-7BC0-6459-584D-B60621D01DA6</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SALARY" id="CB33FB6A-E2CE-49D2-D5DB-6AAE4C82DE73">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:45:49 UTC</createdTime>
+<ownerDesignName>p2</ownerDesignName>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

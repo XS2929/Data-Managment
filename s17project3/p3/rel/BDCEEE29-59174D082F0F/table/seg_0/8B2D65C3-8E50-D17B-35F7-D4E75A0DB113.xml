@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B2D65C3-8E50-D17B-35F7-D4E75A0DB113" name="COURSE">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:51:07 UTC</createdTime>
+<generatorID>72AFFEC7-0570-3D5B-0D5F-62EBA2EF73E8</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UNIQUE_NUMBER" id="FA795733-158F-DC67-F37E-4C089C65B2E0">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:51:07 UTC</createdTime>
+<generatorID>1923070C-6328-BFE7-7B6D-3ECF3A8B4132</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COURSE_NUMBER" id="0CDAC546-962E-505B-F057-C956038AE6CD">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:51:07 UTC</createdTime>
+<generatorID>5B42EE0B-97F4-AC96-D51A-6D8C1D696E70</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COURSE_NAME" id="38A55A4F-A386-17E9-7099-4973FCF41871">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:51:07 UTC</createdTime>
+<generatorID>797C89F5-88C8-8F10-284B-B2AADE354932</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37894182-C63B-FEC8-ED6D-A0C5DF2566D0" name="COURSE_PK">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:51:07 UTC</createdTime>
+<generatorID>F3BFFFC7-DCE1-8812-0CA9-76FBF68D24B0</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA795733-158F-DC67-F37E-4C089C65B2E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

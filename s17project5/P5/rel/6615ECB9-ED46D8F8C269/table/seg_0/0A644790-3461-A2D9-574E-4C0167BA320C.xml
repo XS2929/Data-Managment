@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A644790-3461-A2D9-574E-4C0167BA320C" name="S17_25_ARL_EMP">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>4B9BD5E1-DFA6-873E-7BD5-81F0338FA2F4</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_NAME" id="9AF6B61A-923D-F6D2-428A-EA6824C6136C">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>73D157D8-3F63-C6B5-E433-6484F3F8CEF9</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_ID" id="A7A61B68-93FC-10C4-38D7-566DC70FCD0B">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>33F30518-8BD7-81BC-A0DB-6B88F67074C4</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_STATUS" id="B04707FE-1AFD-531B-5D2E-7492F3216A5A">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>BE3961A4-44C8-3408-BB68-03308ACDD260</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS_EFF_DATE" id="84563F3B-A7D1-9E1C-8518-1EA552D69008">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>ADF7078F-A70D-7D46-5A28-430270DB4CC6</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAB_CODE" id="F7BEC6FD-057A-1993-797D-B05E975DF6D5">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:32:07 UTC</createdTime>
+<generatorID>53CD7695-BC84-343D-D8DA-03E453A2D53C</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B40B4AE-F8C4-479A-F892-F523345E81CA" referredColumn="36B00E75-7AD7-6673-3FEF-7B8CD7D30F20"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0CB08B68-958B-AFF3-8224-4CF62D479D87" name="ARL_EMPLOYEES_PK">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>18346785-4E8B-28A6-8D93-5EDDD2516BAD</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7A61B68-93FC-10C4-38D7-566DC70FCD0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B558263-C899-BB81-3122-329149A8A1E8" name="EMPLOYEE_LAB">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:32:07 UTC</createdTime>
+<generatorID>B955EBEB-9F2B-F754-6053-C85F7A73BCA8</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7BEC6FD-057A-1993-797D-B05E975DF6D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

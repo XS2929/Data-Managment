@@ -1,0 +1,198 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="46C8EA83-0A92-1696-57DE-F35A9E58AC25" name="INSTRUCTOR">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:51:07 UTC</createdTime>
+<generatorID>1BADC937-7BC0-6459-584D-B60621D01DA6</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INSTRUCTOR_ID" id="A4EEE03B-49AE-C92A-84B2-71226AC15C24">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:51:08 UTC</createdTime>
+<generatorID>D8D2A24A-2972-8FC0-A664-056E62E63059</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRST_NAME" id="6BEBB874-552A-2E99-5128-34D659000B52">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:51:08 UTC</createdTime>
+<generatorID>918DCE63-FE39-B8D2-A492-12A62E3B0B7F</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME" id="F4501928-7D3A-5440-16FF-EBF959AB1840">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:51:08 UTC</createdTime>
+<generatorID>9F72C575-2086-6B88-A71B-8F06363B2600</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT" id="AB1BCFE7-DF2A-B63A-14E6-E8877A8C72C7">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:51:08 UTC</createdTime>
+<generatorID>2437461A-593A-763B-B601-0A3F1000C7BF</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Type" id="70BA7D50-EBA5-80E8-0149-680922049307">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-02-17 00:02:47 UTC</createdTime>
+<ownerDesignName>p2</ownerDesignName>
+<constraintName>CH_INH_INSTRUCTOR</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18</dataTypeSize>
+<listOfValues>
+<valueDef value="INSTRUCTOR" description="entity INSTRUCTOR"/>
+<valueDef value="PROFESSOR" description="entity PROFESSOR"/>
+<valueDef value="Teaching_Assistant" description="entity Teaching_Assistant"/>
+</listOfValues>
+<ownDataTypeParameters>18,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isDiscriminatorColumn>true</isDiscriminatorColumn>
+<dependentColumns>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>6BEBB874-552A-2E99-5128-34D659000B52</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>INSTRUCTOR</discriminatorValue>
+<id>414E854E-52EF-67C5-027A-D2A7A2DF1481</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>F4501928-7D3A-5440-16FF-EBF959AB1840</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>INSTRUCTOR</discriminatorValue>
+<id>6E21297E-A331-89BF-97C9-661AF5FB8150</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>AB1BCFE7-DF2A-B63A-14E6-E8877A8C72C7</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>INSTRUCTOR</discriminatorValue>
+<id>E04D7F7B-3C44-0EE9-BAF8-3F3E6EC2F26E</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>D3552FF1-F1C2-4D41-9650-2F65E6468073</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>Teaching_Assistant</discriminatorValue>
+<id>F3CA08AD-C02E-0115-0879-DD49D1999F23</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>6BEBB874-552A-2E99-5128-34D659000B52</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>Teaching_Assistant</discriminatorValue>
+<id>1633CE99-BF27-B4E7-9B0A-4FCB4AFEEB14</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>F4501928-7D3A-5440-16FF-EBF959AB1840</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>Teaching_Assistant</discriminatorValue>
+<id>C7067E75-45D7-37EC-A4CA-5870BC9778A4</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>AB1BCFE7-DF2A-B63A-14E6-E8877A8C72C7</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>Teaching_Assistant</discriminatorValue>
+<id>D86797C3-E8E4-0712-A075-C0F22D9A20D7</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>FCA369D9-E72B-1163-6868-EE920E080C0F</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>PROFESSOR</discriminatorValue>
+<id>0E3309A0-E0C7-18F2-BF26-0368EC049C37</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>6BEBB874-552A-2E99-5128-34D659000B52</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>PROFESSOR</discriminatorValue>
+<id>508AEFDB-6540-8B76-995E-6C312B2C5C76</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>F4501928-7D3A-5440-16FF-EBF959AB1840</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>PROFESSOR</discriminatorValue>
+<id>E33E2D0C-15D7-8E1D-5E16-0F0870D3EA3B</id>
+</dependentColumn>
+<dependentColumn class="oracle.dbtools.crest.model.design.relational.Column$DependentColumnDescriptor">
+<columnID>AB1BCFE7-DF2A-B63A-14E6-E8877A8C72C7</columnID>
+<dependAsMandatory>false</dependAsMandatory>
+<dependOnValue>true</dependOnValue>
+<discriminatorValue>PROFESSOR</discriminatorValue>
+<id>3EB5952D-22A7-F502-06C8-EAEBCC3B4923</id>
+</dependentColumn>
+</dependentColumns>
+</Column>
+<Column name="SALARY" id="FCA369D9-E72B-1163-6868-EE920E080C0F">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-02-17 00:02:47 UTC</createdTime>
+<generatorID>CB33FB6A-E2CE-49D2-D5DB-6AAE4C82DE73</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAJOR" id="D3552FF1-F1C2-4D41-9650-2F65E6468073">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-02-17 00:02:47 UTC</createdTime>
+<generatorID>138D7027-0A09-580A-8D3A-90F96150B8EB</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1E60E9E9-59F6-F689-23E7-5764B6FEBEA5" name="INSTRUCTOR_PK">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:51:08 UTC</createdTime>
+<generatorID>1A369BA7-5316-A5B3-0750-D944EE46EA5D</generatorID>
+<ownerDesignName>p2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4EEE03B-49AE-C92A-84B2-71226AC15C24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

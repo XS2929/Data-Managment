@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="645C57D0-EE00-CEF1-D624-B39626FCBAB6" name="Teaching_Assistant">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:45:59 UTC</createdTime>
+<ownerDesignName>p2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="false"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>1BADC937-7BC0-6459-584D-B60621D01DA6</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="MAJOR" id="138D7027-0A09-580A-8D3A-90F96150B8EB">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:46:06 UTC</createdTime>
+<ownerDesignName>p2</ownerDesignName>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

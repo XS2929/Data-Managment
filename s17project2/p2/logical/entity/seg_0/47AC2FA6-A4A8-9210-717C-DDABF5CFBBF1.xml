@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="47AC2FA6-A4A8-9210-717C-DDABF5CFBBF1" name="DEPARTMENT">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:47:43 UTC</createdTime>
+<ownerDesignName>p2</ownerDesignName>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DEPARTMENT_ID" id="8DA8BBD1-14DD-3948-5C82-6080A0AF7BDB">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:47:48 UTC</createdTime>
+<ownerDesignName>p2</ownerDesignName>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEPARTMENT_NAME" id="89245ABC-55B5-A387-0DB7-48B6AA0E6E30">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:48:00 UTC</createdTime>
+<ownerDesignName>p2</ownerDesignName>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9AED0F04-6826-68DB-FEB9-46F42C29E918" name="DEPARTMENT PK">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:47:58 UTC</createdTime>
+<ownerDesignName>p2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8DA8BBD1-14DD-3948-5C82-6080A0AF7BDB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,71 @@
+--disable triggers
+alter trigger course_unique_number_trg disable;
+alter trigger department_department_id_trg disable;
+alter trigger instructor_instructor_id_trg disable;
+alter trigger p2_session_session_id_trg disable;
+
+
+-- disable FK constraints
+ALTER TABLE p2_session disable CONSTRAINT course_session;
+ALTER TABLE p2_session disable CONSTRAINT department_session;
+ALTER TABLE p2_session disable CONSTRAINT phd_session;
+ALTER TABLE p2_session disable CONSTRAINT professor_session;
+
+--truncate tables
+truncate table course;
+truncate table department;
+truncate table instructor;
+truncate table p2_session;
+
+--insert into course table
+insert into course(unique_number, course_number, course_name)
+  	values(1, 54307, 'Intro to Programming');
+insert into course(unique_number, course_number, course_name)
+  	values(2, 63421, 'Intro to Chemistry');
+insert into course(unique_number, course_number, course_name)
+  	values(3, 78641, 'Intro to Biology');
+
+--insert into department
+insert into department(department_id, department_name)
+  	values(1, 'Computer Science');
+insert into department(department_id, department_name)
+  	values(2, 'Biology');
+insert into department(department_id, department_name)
+  	values(3, 'Chemistry');
+
+--insert into professor_view
+insert into instructor(instructor_id, first_name, last_name, department, salary, type)
+  	values(1, 'Peter', 'Scheele', 'Computer Science', 100000, 'PROFESSOR');
+insert into instructor(instructor_id, first_name, last_name, department, salary, type)
+  	values(2, 'Robert', 'Wang', 'Chemistry', 200000, 'PROFESSOR');
+insert into instructor(instructor_id, first_name, last_name, department, salary, type)
+  	values(3, 'Richard', 'Johnson', 'Biology', 100500, 'PROFESSOR');
+
+--insert into Teaching_Assistant view
+insert into instructor(instructor_id, first_name, last_name, department, major, type)
+  	values(4, 'Samuel', 'Scheele', 'Computer Science', 'Computer Science', 'TEACHING_ASSISTANT');
+insert into instructor(instructor_id, first_name, last_name, department, major, type)
+  	values(5, 'Drew', 'Vogelsang', 'Biology', 'Biology', 'TEACHING_ASSISTANT');
+insert into instructor(instructor_id, first_name, last_name, department, major, type)
+  	values(6, 'Erica', 'Wheatley', 'Chemistry', 'Chemistry', 'TEACHING_ASSISTANT');
+
+--insert into session
+insert into p2_session(session_id, unique_number, department_id, instructor_id, instructor_id1)
+  	values(1, 1, 1, 2, 4);
+insert into p2_session(session_id, unique_number, department_id, instructor_id, instructor_id1)
+  	values(2, 2, 3, 3, 5);
+insert into p2_session(session_id, unique_number, department_id, instructor_id, instructor_id1)
+  	values(3, 3, 2, 2, 6);
+
+
+-- Enable Triggers
+alter trigger course_unique_number_trg enable;
+alter trigger department_department_id_trg enable;
+alter trigger instructor_instructor_id_trg enable;
+alter trigger p2_session_session_id_trg enable;
+
+-- Enable FK constraints
+ALTER TABLE p2_session enable CONSTRAINT course_session;
+ALTER TABLE p2_session enable CONSTRAINT department_session;
+ALTER TABLE p2_session enable CONSTRAINT phd_session;
+ALTER TABLE p2_session enable CONSTRAINT professor_session;

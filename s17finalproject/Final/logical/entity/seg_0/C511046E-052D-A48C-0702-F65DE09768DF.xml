@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C511046E-052D-A48C-0702-F65DE09768DF" name="S17_25_ARL_EQUIP_FAB">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:52:18 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SYSTEM_NAME" id="3D06794C-8729-D0B6-403B-38DE173163BD">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:52:44 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>175</dataTypeSize>
+<ownDataTypeParameters>175,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SYSTEM_ID_NUMBER" id="EB049924-DDC7-3865-A92E-FBCDD36089B7">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:52:44 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EQUIP_FAB_ID" id="B51D92A3-B17B-6AC9-CA51-29F8B39674B4">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:52:44 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LAB_CODE" id="D2B000B3-4B5B-C786-DB47-E5C9D2C3011C">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:30:43 UTC</createdTime>
+<generatorID>A9524953-0B7E-8760-EF8F-7F5D72CD35C7</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>9BC98590-47B9-23C2-B866-C54AC01E6CA4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROJECT_ABBREVIATION" id="820421F6-2382-FEB0-623C-1461A1199BFD">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:32:01 UTC</createdTime>
+<generatorID>DBBF302A-0FF3-AF91-3DB4-1431D7D94AB1</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4F98F6E3-D031-A0CB-8E10-02F81499BD50</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="329AE68F-B04E-401F-DF8E-C97BD3C0F9F0" name="DIARL_EQUIP_FABRICATIONS PK">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:52:57 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B51D92A3-B17B-6AC9-CA51-29F8B39674B4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

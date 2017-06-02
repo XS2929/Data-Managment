@@ -1,0 +1,76 @@
+@prefix sorg: <http://schema.org/>
+@prefix nfl: <http://nfl.com/>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Schema
+nfl:Superbowl a rdfs:Class ; rdfs:subClassOf sorg:SportsEvent .
+nfl:NFLTeam a rdfs:Class ; rdfs:subClassOf sorg:SportsTeam . 
+nfl:Stadium a rdfs:Class ; rdfs:subClassOf sorg:SportsActivityLocation . 
+nfl:stadium_name a rdf:Property ; rdfs:subPropertyOf rdfs:label . 
+nfl:stadium_location a rdf:Property ; rdfs:subPropertyOf rdfs:location . 
+nfl:team_name a rdf:Property ; rdfs:subPropertyOf rdfs:label .
+nfl:winningTeam a rdf:Property ; rdfs:subPropertyOf sorg:competitor .
+nfl:losingTeam a rdf:Property ; rdfs:subPropertyOf sorg:competitor . 
+nfl:name a rdf:Property ; rdfs:subPropertyOf rdfs:label . 
+
+# Define the teams
+nfl:team-giants a nfl:NFLTeam ; nfl:team_name "New York Giants" .
+nfl:team-patriots a nfl:NFLTeam ; nfl:team_name "New England Patriots" .
+nfl:team-ravens a nfl:NFLTeam ; nfl:team_name "Baltimore Ravens" .
+nfl:team-49ers a nfl:NFLTeam ; nfl:team_name "San Francisco 49ers" .
+nfl:team-seahawks a nfl:NFLTeam ; nfl:team_name "Seattle Seahawks" .
+nfl:team-broncos a nfl:NFLTeam ; nfl:team_name "Denver Broncos" .
+nfl:team-panthers a nfl:NFLTeam ; nfl:team_name "Carolina Panthers" .
+nfl:team-falcons a nfl:NFLTeam ; nfl:team_name "Atlanta Falcons" . 
+
+#Define the Stadiums 
+ nfl:stadium-lucas-oil a nfl:Stadium ; nfl:stadium_name "Lucas Oil Stadium" ; 
+ nfl:stadium_location "Indianapolis, IN" . 
+ nfl:stadium-mercedes-benz a nfl:Stadium ; nfl:stadium_name "Mercedes-Benz Superdome" ; 
+ nfl:stadium_location "New Orleans, LA" . 
+ nfl:stadium-metlife a nfl:Stadium ; nfl:stadium_name "MetLife Stadium" ; 
+ nfl:stadium_location "East Rutherford, NJ" .
+ nfl:stadium-Univ-pheonix a nfl:Stadium ; nfl:stadium_name "University of Phoenix Stadium" ; 
+ nfl:stadium_location "Glendale, AZ" .
+ nfl:stadium-Levi a nfl:Stadium ; nfl:stadium_name "Levi's Stadium" ; 
+ nfl:stadium_location "Santa Clara, CA" . 
+ nfl:stadium-nrg a nfl:Stadium ; nfl:stadium_name "NRG Stadium" ; 
+ nfl:stadium_location "Houston, TX" .
+
+# Define the Superbowl Records
+nfl:superbowl-XLVI a nfl:Superbowl ;
+ nfl:date "2012-02-05" ; nfl:stadium nfl:stadium-lucas-oil ;
+ nfl:winningTeam nfl:team-giants ; nfl:winningScore 21 ;
+ nfl:losingTeam nfl:team-patriots ; nfl:losingScore 17 ;
+ nfl:name "Superbowl XLVI" .
+
+nfl:superbowl-XLVII a nfl:Superbowl ;
+ nfl:date "2013-02-03" ; nfl:stadium nfl:stadium-mercedes-benz ;
+ nfl:winningTeam nfl:team-ravens ; nfl:winningScore 34 ;
+ nfl:losingTeam nfl:team-49ers ; nfl:losingScore 31 ;
+ nfl:name "Superbowl XLVII" . 
+
+nfl:superbowl-XLVIII a nfl:Superbowl ;
+ nfl:date "2014-02-02" ; nfl:stadium nfl:stadium-metlife ;
+ nfl:winningTeam nfl:team-seahawks ; nfl:winningScore 43 ;
+ nfl:losingTeam nfl:team-broncos ; nfl:losingScore 8 ;
+ nfl:name "Superbowl XLVIII" . 
+
+nfl:superbowl-XLIX a nfl:Superbowl ;
+ nfl:date "2015-02-01" ; nfl:stadium nfl:stadium-Univ-pheonix ;
+ nfl:winningTeam nfl:team-patriots ; nfl:winningScore 28 ;
+ nfl:losingTeam nfl:team-seahawks ; nfl:losingScore 24 ;
+ nfl:name "Superbowl XLIX" . 
+
+nfl:superbowl-L a nfl:Superbowl ;
+ nfl:date "2016-02-07" ; nfl:stadium nfl:stadium-Levi ;
+ nfl:winningTeam nfl:team-broncos ; nfl:winningScore 24 ;
+ nfl:losingTeam nfl:team-panthers ; nfl:losingScore 10 ;
+ nfl:name "Superbowl L" . 
+
+nfl:superbowl-LI a nfl:Superbowl ;
+ nfl:date "2017-02-05" ; nfl:stadium nfl:stadium-nrg ;
+ nfl:winningTeam nfl:team-patriots ; nfl:winningScore 34 ;
+ nfl:losingTeam nfl:team-falcons ; nfl:losingScore 28 ;
+ nfl:name "Superbowl LI" . 

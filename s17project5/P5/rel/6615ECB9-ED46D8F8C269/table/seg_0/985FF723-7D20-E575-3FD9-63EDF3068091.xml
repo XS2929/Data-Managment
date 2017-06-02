@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="985FF723-7D20-E575-3FD9-63EDF3068091" name="S17_25_CTR_C_C">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>61CAF25C-D78D-D9F3-F635-CFE9AD58467E</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COMMENT_TYPE_CODE" id="CB4F36C7-DF14-5708-D3BC-5BAD550C05B1">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>D7C705F9-2BDF-EC1B-FEA8-013412EC90C9</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="BB8DA6D5-D739-382A-52AA-62026B4A26CE">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>0FB754FA-F882-536F-5EE2-E3E2827601B6</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENT_ID" id="4A7F0444-ACA3-DFB2-B813-A07F9FD0BAF8">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<generatorID>CA2E4FB5-84CB-3616-87C8-5BBDDB12C3CE</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E9F7B14-6AB1-979F-53E8-4C4EE8FA1A83" referredColumn="29D7997E-3D3F-85D7-6A9B-2E5F5DE2273A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D56AA4C-4841-09B5-341E-3BE417F3AA9C" name="CTR_Comment_Codes_PK">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>CF3BB4CF-1A7A-32EE-E190-41E46EF84732</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB4F36C7-DF14-5708-D3BC-5BAD550C05B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E6B0F62-72E5-D3A9-064B-B9F50317EDD6" name="CTR_Comment_Codes__IDX">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F445642B-D588-DCCE-F77C-E223F82200BE</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4A7F0444-ACA3-DFB2-B813-A07F9FD0BAF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CDF63C2C-0C2F-5738-152E-00A35B1BEE27" name="CTR_COM_TO_CTR_COM_COD">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 20:17:15 UTC</createdTime>
+<generatorID>F445642B-D588-DCCE-F77C-E223F82200BE</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A7F0444-ACA3-DFB2-B813-A07F9FD0BAF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

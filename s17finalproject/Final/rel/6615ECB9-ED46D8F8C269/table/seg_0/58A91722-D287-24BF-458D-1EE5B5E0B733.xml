@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58A91722-D287-24BF-458D-1EE5B5E0B733" name="S17_25_CTR_J_C">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>CE2036B8-6695-9201-059D-4A1B7EB71B3F</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="JUSTIFICATION_SEQ" id="71D2FE62-5CF3-C34B-9A33-DC20C85C943F">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>C29C681A-8B5B-9A46-AD7B-20736D5D5608</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="9E94049C-F9CF-D0CD-D130-3FD5D6EED521">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>CF8EE287-697D-224F-8BD8-F53AEFFD4AC1</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CTR_STATUS_SEQ" id="966F37AF-A9EF-54FB-3411-7C2323177BDB">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<generatorID>2D9F2E35-20C0-C0CD-3926-D96130A6FDDF</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE78EF24-DF67-6BD1-C786-E05B9C163876" name="CTR_Justification_Codes_PK">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>2BF06461-AFCF-1A94-C637-C0CA66D9FBF7</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71D2FE62-5CF3-C34B-9A33-DC20C85C943F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0B7FD5C-56F6-4030-CF80-28B01D2BFCCE" name="CTR_Justification_Codes__IDX">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5D28C9F1-6F28-34FC-C45E-897F078145D9</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="966F37AF-A9EF-54FB-3411-7C2323177BDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

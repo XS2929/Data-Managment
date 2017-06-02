@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Admin_to_requests" directorySegmentName="seg_0" id="E4F15D72-1692-E44D-CD38-C5301F8F2D2D">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 19:33:07 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<sourcePk>E17F5064-F77A-15D2-01C9-18C301F13BF2</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>37106B7A-3610-7D8A-D1E6-4F38AB149979</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8BC4C6CF-EEE2-582C-9C06-36247BF692D1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ARL_PROJECTS_TO_ARL_EQUIP_FABRICATIONS" directorySegmentName="seg_0" id="DBBF302A-0FF3-AF91-3DB4-1431D7D94AB1">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:32:01 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<sourcePk>0FF7FA37-56E1-D99D-A90B-EECC69EE879F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>97CA21FB-C5C4-AA9F-4F2A-34886C4AD488</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C511046E-052D-A48C-0702-F65DE09768DF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

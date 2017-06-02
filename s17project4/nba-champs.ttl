@@ -1,0 +1,44 @@
+@prefix sorg: <http://schema.org/>
+@prefix nba: <http://nba.com/>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Schema
+nba:championship a rdfs:Class ; rdfs:subClassOf sorg:SportsEvent .
+nba:nbaTeam a rdfs:Class ; rdfs:subClassOf sorg:SportsTeam .
+nba:team_name a rdf:Property ; rdfs:subPropertyOf rdfs:label .
+nba:winningTeam a rdf:Property ; rdfs:subPropertyOf sorg:competitor .
+nba:losingTeam a rdf:Property ; rdfs:subPropertyOf sorg:competitor . 
+nba:name a rdf:Property ; rdfs:subPropertyOf rdfs:label . 
+
+# Define the teams
+nba:team-cavaliers a nba:nbaTeam ; nba:team_name "Cleveland Cavaliers" .
+nba:team-warriors a nba:nbaTeam ; nba:team_name "Golden State Warriors" .
+nba:team-heat a nba:nbaTeam ; nba:team_name "Miami Heat" .
+nba:team-spurs a nba:nbaTeam ; nba:team_name "San Antonio Spurs" .
+
+
+# Define the championship Records
+nba:championship-2016 a nba:championship ;
+ nba:date "2016-06-19" ; nba:arena "Oracle Arena (Oakland, CA)" ;
+ nba:winningTeam nba:team-cavaliers ; nba:winningScore 4 ;
+ nba:losingTeam nba:team-warriors ; nba:losingScore 3 ;
+ nba:name "championship 2016" . 
+
+nba:championship-2015 a nba:championship ;
+ nba:date "2015-06-16" ; nba:arena "Quicken Loans arena (Cleveland, OH)" ;
+ nba:winningTeam nba:team-warriors ; nba:winningScore 4 ;
+ nba:losingTeam nba:team-cavaliers ; nba:losingScore 2 ;
+ nba:name "championship 2015" . 
+
+nba:championship-2014 a nba:championship ;
+ nba:date "2014-06-15" ; nba:arena "AT&T Center (San Antonio, TX)" ;
+ nba:winningTeam nba:team-spurs ; nba:winningScore 4 ;
+ nba:losingTeam nba:team-heat ; nba:losingScore 1 ;
+ nba:name "championship 2014" . 
+
+nba:championship-2013 a nba:championship ;
+ nba:date "2013-06-20" ; nba:arena "American Airlines arena (Miami, FL)" ;
+ nba:winningTeam nba:team-heat ; nba:winningScore 4 ;
+ nba:losingTeam nba:team-spurs ; nba:losingScore 3 ;
+ nba:name "championship 2013" . 

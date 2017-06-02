@@ -1,0 +1,48 @@
+For admin: 
+Db:
+jdbc:data:world:sparql:xs2929:project-5-shao-poche-kim-brickman
+User: 
+xs2929
+Pass:
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcm9kLXVzZXItY2xpZW50OnhzMjkyOSIsImlzcyI6ImFnZW50OnhzMjkyOTo6MTE1MGU5Y2QtYzgxNC00Y2Y2LTgyNjItZDlmOGRhMTAwYTBhIiwiaWF0IjoxNDg4NDA2OTE4LCJyb2xlIjpbInVzZXJfYXBpX3dyaXRlIiwidXNlcl9hcGlfcmVhZCJdLCJnZW5lcmFsLXB1cnBvc2UiOnRydWV9.xK7H1qtreM4qY3hQdYc8_nfl0e-NwCyVlvjyBVxaiNw96aPGYBTqB-LOivAzXRVQW4yXITXasou_40Nt7WCkWw
+Query: 
+"SELECT ?STAFF_ID ?STAFF_NAME ?REQUESTS_CHECKED ?TYPE WHERE {?s a <https://data.world/cannata/project5#S17_25_CTR_Ad> . ?s <http://data.world/xs2929/project-5-shao-poche-kim-brickman/S17_25_CTR_S.csv/S17_25_CTR_S#STAFF_ID> ?STAFF_ID . ?s <http://data.world/xs2929/project-5-shao-poche-kim-brickman/S17_25_CTR_S.csv/S17_25_CTR_S#STAFF_NAME> ?STAFF_NAME . ?s <http://data.world/xs2929/project-5-shao-poche-kim-brickman/S17_25_CTR_S.csv/S17_25_CTR_S#REQUESTS_CHECKED> ?REQUESTS_CHECKED . ?s <http://data.world/xs2929/project-5-shao-poche-kim-brickman/S17_25_CTR_S.csv/S17_25_CTR_S#TYPE> ?TYPE .}"
+json:
+select				
+jt1.STAFF_ID	STAFF_ID,			
+jt2.STAFF_NAME	STAFF_NAME,			
+jt3.TYPE	Type,
+jt4.REQUESTS_CHECKED REQUESTS_CHECKED
+from	apex_collections	t,
+json_table(t.clob001, '$.STAFF_ID[*]' COLUMNS rid for ordinality, STAFF_ID varchar path '$') jt1,
+json_table(t.clob001, '$.STAFF_NAME[*]' COLUMNS rid for ordinality, STAFF_NAME varchar path '$') jt2,
+json_table(t.clob001, '$.TYPE[*]' COLUMNS rid for ordinality, TYPE varchar path '$') jt3,
+json_table(t.clob001, '$.REQUESTS_CHECKED[*]' COLUMNS rid for ordinality, REQUESTS_CHECKED integer path '$') jt4
+where	t.collection_name	=	'P8_EMP_COLLECTION'and 
+jt1.rid = jt2.rid and jt2.rid = jt3.rid and jt3.rid=jt4.rid
+
+
+
+For accountant: 
+Db:
+jdbc:data:world:sparql:xs2929:project-5-shao-poche-kim-brickman
+User: 
+xs2929
+Pass:
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwcm9kLXVzZXItY2xpZW50OnhzMjkyOSIsImlzcyI6ImFnZW50OnhzMjkyOTo6MTE1MGU5Y2QtYzgxNC00Y2Y2LTgyNjItZDlmOGRhMTAwYTBhIiwiaWF0IjoxNDg4NDA2OTE4LCJyb2xlIjpbInVzZXJfYXBpX3dyaXRlIiwidXNlcl9hcGlfcmVhZCJdLCJnZW5lcmFsLXB1cnBvc2UiOnRydWV9.xK7H1qtreM4qY3hQdYc8_nfl0e-NwCyVlvjyBVxaiNw96aPGYBTqB-LOivAzXRVQW4yXITXasou_40Nt7WCkWw
+Query: 
+"SELECT ?STAFF_ID ?STAFF_NAME ?REQUESTS_MADE ?TYPE WHERE {?s a <https://data.world/cannata/project5#S17_25_CTR_Acc> . ?s <http://data.world/xs2929/project-5-shao-poche-kim-brickman/S17_25_CTR_S.csv/S17_25_CTR_S#STAFF_ID> ?STAFF_ID . ?s <http://data.world/xs2929/project-5-shao-poche-kim-brickman/S17_25_CTR_S.csv/S17_25_CTR_S#STAFF_NAME> ?STAFF_NAME . ?s <http://data.world/xs2929/project-5-shao-poche-kim-brickman/S17_25_CTR_S.csv/S17_25_CTR_S#REQUESTS_MADE> ?REQUESTS_MADE . ?s <http://data.world/xs2929/project-5-shao-poche-kim-brickman/S17_25_CTR_S.csv/S17_25_CTR_S#TYPE> ?TYPE .}"
+json:
+select				
+jt1.STAFF_ID	STAFF_ID,			
+jt2.STAFF_NAME	STAFF_NAME,			
+jt3.TYPE	Type,
+jt4.REQUESTS_MADE REQUESTS_MADE
+from	apex_collections	t,
+json_table(t.clob001, '$.STAFF_ID[*]' COLUMNS rid for ordinality, STAFF_ID varchar path '$') jt1,
+json_table(t.clob001, '$.STAFF_NAME[*]' COLUMNS rid for ordinality, STAFF_NAME varchar path '$') jt2,
+json_table(t.clob001, '$.TYPE[*]' COLUMNS rid for ordinality, TYPE varchar path '$') jt3,
+json_table(t.clob001, '$.REQUESTS_MADE[*]' COLUMNS rid for ordinality, REQUESTS_MADE integer path '$') jt4
+where	t.collection_name	=	'P8_EMP_COLLECTION'and 
+jt1.rid = jt2.rid and jt2.rid = jt3.rid and jt3.rid=jt4.rid
+

@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5741D4E5-A84E-0C83-BF52-5EDAE4D4CC4F" name="S17_25_CTR_D">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 03:30:48 UTC</createdTime>
+<generatorID>09D34557-1BC0-169A-45BD-04CEFE4849F6</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="doc_id" id="04F44379-F3FC-E5FC-082F-45FFFD074D85">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 03:30:48 UTC</createdTime>
+<generatorID>E6224D68-36F0-3258-E7B2-1DB2AB515686</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="4B4BBE8B-6E5E-5DFA-B259-985642D94986">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 03:30:48 UTC</createdTime>
+<generatorID>8273A169-144D-07ED-A63A-580375A77B04</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mimetype" id="351D9A18-45AC-E687-D445-9A779CAFEC75">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 03:30:48 UTC</createdTime>
+<generatorID>B816B219-C555-6F19-9320-1E9D9007E949</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="charset" id="FFE73A68-8A49-DAA9-D867-F9CA5498E2F4">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 03:30:48 UTC</createdTime>
+<generatorID>6A89DAEF-8E10-C3F6-F676-6D594130BDE4</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="blob" id="C958A609-FABB-B1D3-0692-D4398E946184">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 03:30:48 UTC</createdTime>
+<generatorID>3805A2AF-997E-C8B4-E339-132C953B3277</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comments" id="8966D18C-05BA-3E1A-AE5F-86C7BD101719">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 03:30:48 UTC</createdTime>
+<generatorID>9CD5502C-56AD-0AF6-91AF-6C24A20CC0A8</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tags" id="2BA0E6F9-8055-3FEB-B12E-7888FE730279">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 03:30:48 UTC</createdTime>
+<generatorID>772FCBF0-234F-CE99-F65C-17883BF113A4</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="S17_25_CTR_R_CTR_Num" id="F56B4CEF-A2DB-0DC1-87F0-48C75103F92F">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 03:30:48 UTC</createdTime>
+<generatorID>E684837C-27BE-2CC6-B791-84C5C56ED83D</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76E60069-1967-7AF4-F3D4-DE9C56327E11" referredColumn="4840E017-0551-DE80-55DA-E4B78F3D3048"/>
+</associations>
+</Column>
+<Column name="S17_25_CTR_Req_ARL_Staff_id" id="BE0D081A-BA36-0142-AABB-9E1039C36559">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 03:30:48 UTC</createdTime>
+<generatorID>C1583046-C972-AE33-E89D-A0038E16BABA</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CTR_NUMBER" id="AB555889-75AD-4087-6D15-E2CD187708AE">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 19:39:01 UTC</createdTime>
+<generatorID>51438CED-CE78-0EE2-7F3E-2B9E239CE172</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0762924F-ECCB-6DDB-047C-AA10DFCAACC2" name="S17_25_CTR_Document_PK">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 03:30:48 UTC</createdTime>
+<generatorID>D4B58ABF-7CFA-E8F1-FB8C-B3736B9F8188</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04F44379-F3FC-E5FC-082F-45FFFD074D85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68F17228-7411-FBEF-AD3A-D09A1294582B" name="CTR_REQUESTS_TO_CTR_DOC">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 03:30:48 UTC</createdTime>
+<generatorID>A4E14FEC-14E7-D100-CCA6-C34253ECB3FD</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F56B4CEF-A2DB-0DC1-87F0-48C75103F92F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

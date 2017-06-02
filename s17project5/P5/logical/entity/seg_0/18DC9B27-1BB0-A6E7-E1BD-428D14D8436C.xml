@@ -1,0 +1,254 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="18DC9B27-1BB0-A6E7-E1BD-428D14D8436C" name="S17_25_ARL_ACC_TRANS">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:43:36 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TRANSACTION_ID" id="E0A23422-066A-67DD-F901-22371CC89DC5">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:43:57 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DOCUMENT_ID" id="CCA0D513-78A5-9565-28D6-270D16338836">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:43:57 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AMOUNT" id="768F6A9E-81BB-A379-C1D5-534D6EA07924">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:44:59 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DTN" id="888A783B-C246-50DF-7C38-96E80846EB5E">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:47:59 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DTV_NUMBER" id="9DFC7FBD-0CFB-F935-D642-3F580544A18B">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:48:35 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REQ_NUMBER" id="85621549-73A7-18E5-921C-A71715B88539">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:48:36 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PR_NUMBER" id="F6D2A089-D52F-7541-CBA3-0E9741811A18">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:48:36 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PURCHASE_ORDER_NUMBER" id="DBC308B4-80C1-4A19-D9A6-7F74F8CB18D2">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:49:57 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VENDOR_DESCRIPTION" id="718725C6-2F82-A62A-30BD-1F626BE91647">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:50:38 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>37</dataTypeSize>
+<ownDataTypeParameters>37,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TRANSACTION_STATUS" id="A1CE0786-EF63-3605-1FD6-4844B202B7C4">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:50:58 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TRANSACTION_TYPE" id="D885232F-9816-6374-C5F0-4110DCE2AB7C">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:51:24 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUBCATEGORY" id="39B2B175-4E13-F301-6F63-439D5572A664">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:35:01 UTC</createdTime>
+<generatorID>2A5791FE-7C84-1753-08AF-1A67E11AA667</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>04E3B881-369C-CD97-D9E0-2F8E7F95F5F9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUBCATEGORY1" id="7DB2D679-C151-261E-4CF8-FBD35575EF68">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:39:09 UTC</createdTime>
+<generatorID>0BFD9CDF-022B-9038-F589-9D0FA9D29D07</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>04E3B881-369C-CD97-D9E0-2F8E7F95F5F9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EQUIP_FAB_ID" id="06D149C6-C87A-5BE1-CC55-61A417378950">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:54:22 UTC</createdTime>
+<generatorID>09A9170C-E8DC-081C-C4AC-3FC75C32B5D8</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B51D92A3-B17B-6AC9-CA51-29F8B39674B4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROJECT_ABBREVIATION" id="38A7F991-A7A9-A5F2-9EBC-1F029B2ACDB6">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:00:22 UTC</createdTime>
+<generatorID>F1433B44-F061-2EE9-CC4D-5612AFD08D1F</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4F98F6E3-D031-A0CB-8E10-02F81499BD50</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CTR_NUMBER" id="D24E61AA-EAC2-3817-84A7-4B78D8A17F08">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:25:34 UTC</createdTime>
+<generatorID>DCE3040D-556F-66FF-EE14-51B33D427A02</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6726B42F-CB3F-F682-5644-6A2549CBBCB7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0CBA39B3-BD00-6840-D07A-D8F40720E9AC" name="ARL_ACC_TRANSACTIONS PK">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 01:44:37 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CCA0D513-78A5-9565-28D6-270D16338836</attributeRef>
+<attributeRef>E0A23422-066A-67DD-F901-22371CC89DC5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

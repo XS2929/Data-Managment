@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E806F569-823F-103E-5985-C5C140A26020" name="S17_25_CTR_St">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>1E453FF6-974A-CAED-CF11-5773C0F1ABEE</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CTR_STATUS_SEQ" id="C5EDE124-8384-9315-3C06-41D7552A1C49">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>CC52DF79-3209-D8E5-F8CF-62B99EA82078</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS_SEQ" id="2EA95DC0-8245-ECEA-F5A4-5374DA338C68">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<generatorID>002A021E-EF2F-C2BB-21BA-6C38BFFD2C88</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9220AD9A-2CDD-6EB6-2E8F-A5C4C574AFF7" referredColumn="C98B8834-7B65-E72C-B0C5-C02550732557"/>
+</associations>
+</Column>
+<Column name="CTR_NUMBER" id="114F9608-6C4A-51F0-C9CE-D6E7B83BB8DA">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<generatorID>A7CB201E-5686-716F-966F-8B49999E1EF0</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="290B182B-EDB3-BA5D-B2B3-26D595046DF1" referredColumn="4840E017-0551-DE80-55DA-E4B78F3D3048"/>
+</associations>
+</Column>
+<Column name="EMPLOYEE_ID" id="894F4C0A-C9B0-7F0D-4589-938DA0CC9117">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<generatorID>7DD1BA97-5256-4CCF-7A20-8732150A14F6</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69C5F6A8-C467-5C56-9329-F77616CD240A" referredColumn="A7A61B68-93FC-10C4-38D7-566DC70FCD0B"/>
+</associations>
+</Column>
+<Column name="JUSTIFICATION_SEQ" id="137621FF-81C8-41E2-1A8D-6138AA020B02">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<generatorID>2F847D63-ADB8-4724-CCB8-59E9BD1B1FAC</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACF173C2-B824-3A92-5B4C-37FB7886214C" referredColumn="71D2FE62-5CF3-C34B-9A33-DC20C85C943F"/>
+</associations>
+</Column>
+<Column name="S17_25_CTR_Req_ARL_Staff_id" id="D6738414-0ADD-8576-172E-17DAF0F5F3AA">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 03:30:48 UTC</createdTime>
+<generatorID>C8F74A87-4E26-75C4-895B-6EA0D5DF9ECC</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32270CB6-7AF8-CBCA-7DA0-FC784BAAD9D0" name="CTR_Statuses_PK">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>34DB1662-4DD0-C604-5762-B28EFBA5EEB4</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5EDE124-8384-9315-3C06-41D7552A1C49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D0FA4CF-6710-D0F9-C34A-F9D8B292A7EF" name="CTR_Statuses__IDX">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5D28C9F1-6F28-34FC-C45E-897F078145D9</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="137621FF-81C8-41E2-1A8D-6138AA020B02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6EB59DB3-C8DE-A89E-3D21-458D185F46E6" name="CTR_Statuses__IDXv1">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F1350F8E-5EAA-A9C8-D32D-666D5028B5F3</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="2EA95DC0-8245-ECEA-F5A4-5374DA338C68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D505908-A393-E5A9-4ABE-4226C7D2E094" name="ARL_EMP_TO_CTR_STAT">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<generatorID>D5EE234F-9B38-2996-140C-4C7A2C2E339A</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="894F4C0A-C9B0-7F0D-4589-938DA0CC9117"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="882334CD-AE88-9555-AAF2-51DE10A5E7F4" name="CTR_REQ_TO_CTR_STAT">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<generatorID>973E1778-9540-E418-46F9-EBCC29BFA021</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="114F9608-6C4A-51F0-C9CE-D6E7B83BB8DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DBE0360-9C45-347E-31EB-CB545B4D1E65" name="CTR_REQ_TO_CTR_JUS_CODv1">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 20:17:15 UTC</createdTime>
+<generatorID>5D28C9F1-6F28-34FC-C45E-897F078145D9</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="137621FF-81C8-41E2-1A8D-6138AA020B02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2F61FA9-67B4-B37E-BDD1-A1F92061C815" name="CTR_STAT_COD_TO_CTR_CYR_STAT">
+<createdBy>Drew Poche</createdBy>
+<createdTime>2017-04-14 20:17:15 UTC</createdTime>
+<generatorID>F1350F8E-5EAA-A9C8-D32D-666D5028B5F3</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EA95DC0-8245-ECEA-F5A4-5374DA338C68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

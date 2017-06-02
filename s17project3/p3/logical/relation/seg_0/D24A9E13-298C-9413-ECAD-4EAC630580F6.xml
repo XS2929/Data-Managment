@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PROFESSOR_SESSION" directorySegmentName="seg_0" id="D24A9E13-298C-9413-ECAD-4EAC630580F6">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-02-16 17:49:04 UTC</createdTime>
+<ownerDesignName>p2</ownerDesignName>
+<engineerTo>
+<item key="BDCEEE29-F7B5-6F6E-7777-59174D082F0F" value="true"/>
+</engineerTo>
+<sourcePk>1A369BA7-5316-A5B3-0750-D944EE46EA5D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DC70D243-E8F1-DAAF-75DC-F47194B11B43</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C969578F-3AA3-4195-72F4-5F1CBB741239</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

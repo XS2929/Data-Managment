@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1E453FF6-974A-CAED-CF11-5773C0F1ABEE" name="S17_25_CTR_St">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:13:36 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CTR_STATUS_SEQ" id="CC52DF79-3209-D8E5-F8CF-62B99EA82078">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:14:25 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CTR_NUMBER" id="A7CB201E-5686-716F-966F-8B49999E1EF0">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:45:51 UTC</createdTime>
+<generatorID>973E1778-9540-E418-46F9-EBCC29BFA021</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6726B42F-CB3F-F682-5644-6A2549CBBCB7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMPLOYEE_ID" id="7DD1BA97-5256-4CCF-7A20-8732150A14F6">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:20:29 UTC</createdTime>
+<generatorID>D5EE234F-9B38-2996-140C-4C7A2C2E339A</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>33F30518-8BD7-81BC-A0DB-6B88F67074C4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATUS_SEQ" id="7BCA706A-B969-BF7A-DBE6-8E5607B5EB6E">
+<createdBy>reganbrickman</createdBy>
+<createdTime>2017-04-24 04:38:05 UTC</createdTime>
+<generatorID>F1350F8E-5EAA-A9C8-D32D-666D5028B5F3</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>9739923E-DCC1-6B12-4AFE-44E4CDA72421</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="34DB1662-4DD0-C604-5762-B28EFBA5EEB4" name="CTR_Statuses PK">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:14:39 UTC</createdTime>
+<ownerDesignName>P5</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6615ECB9-88A5-589C-6597-ED46D8F8C269" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CC52DF79-3209-D8E5-F8CF-62B99EA82078</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

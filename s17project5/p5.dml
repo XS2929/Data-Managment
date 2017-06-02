@@ -1,0 +1,216 @@
+--disable triggers
+--example: alter trigger course_unique_number_trg disable;
+alter trigger S17_25_CTR_S_trg disable;
+alter trigger S17_25_CTR_D_ID_TRG disable;
+alter trigger ARL_EMPLOYEES_id_TRG disable;
+alter trigger S17_25_ARL_ACC_TRANS_TRG disable;
+alter trigger S17_25_ARL_SUBC_TRG disable;
+alter trigger S17_25_CTR_S_C_TRG disable;
+alter trigger S17_25_CTR_J_C_TRG disable;
+alter trigger S17_25_CTR_R_TRG disable;
+alter trigger S17_25_CTR_F_Tran_TRG disable;
+alter trigger S17_25_CTR_To_Trans_TRG disable;
+alter trigger CS17_25_CTR_St_TRG disable;
+alter trigger S17_25_CTR_C_TRG disable;
+
+
+-- disable FK constraints
+--example: ALTER TABLE p2_session disable CONSTRAINT course_session;
+
+ALTER TABLE s17_25_ctr_r disable CONSTRAINT acountant_to_requests;
+ALTER TABLE s17_25_ctr_r disable CONSTRAINT admin_to_requests;
+ALTER TABLE s17_25_ctr_f_tran disable CONSTRAINT arl_acc_t_to_ctr_f_t_1;
+ALTER TABLE s17_25_ctr_f_tran disable CONSTRAINT arl_acc_t_to_ctr_from_t_2;
+ALTER TABLE s17_25_ctr_r disable CONSTRAINT arl_emp_to_ctr_req;
+ALTER TABLE s17_25_ctr_st disable CONSTRAINT arl_emp_to_ctr_stat;
+ALTER TABLE s17_25_ctr_c disable CONSTRAINT arl_employees_to_ctr_comments;
+ALTER TABLE s17_25_arl_acc_trans disable CONSTRAINT arl_equip_fab_to_arl_acc_t; 
+ALTER TABLE s17_25_ctr_f_tran disable CONSTRAINT arl_equip_fab_to_ctr_f_t;
+ALTER TABLE s17_25_ctr_r disable CONSTRAINT arl_equip_fab_to_ctr_req;
+ALTER TABLE s17_25_ctr_to_trans disable CONSTRAINT arl_equip_fab_to_ctr_to_t;
+ALTER TABLE s17_25_arl_equip_fab disable CONSTRAINT arl_labs_to_arl_quip_fa;;
+ALTER TABLE s17_25_arl_acc_trans disable CONSTRAINT arl_pro_to_arl_acc_t;
+ALTER TABLE s17_25_arl_equip_fab disable CONSTRAINT arl_pro_to_arl_equip_fab;
+ALTER TABLE s17_25_ctr_f_tran disable CONSTRAINT arl_pro_to_ctr_from_t;
+ALTER TABLE s17_25_ctr_to_trans disable CONSTRAINT arl_pro_to_ctr_tp_t;
+ALTER TABLE s17_25_arl_acc_trans disable CONSTRAINT arl_sub_to_arl_acc_t_1;
+ALTER TABLE s17_25_arl_acc_trans disable CONSTRAINT arl_sub_to_arl_acc_t_2;
+ALTER TABLE s17_25_ctr_to_trans disable CONSTRAINT arl_sub_to_ctr_to_t_1;
+ALTER TABLE s17_25_ctr_to_trans disable CONSTRAINT arl_sub_to_ctr_to_t_2;
+ALTER TABLE s17_25_ctr_c_c disable CONSTRAINT ctr_com_to_ctr_com_cod;
+ALTER TABLE s17_25_ctr_c disable CONSTRAINT ctr_com_to_ctr_com_codv1;
+ALTER TABLE s17_25_arl_acc_trans disable CONSTRAINT ctr_req_to_arl_acc_t;
+ALTER TABLE s17_25_ctr_f_tran disable CONSTRAINT ctr_req_to_ctr_from_t;
+ALTER TABLE s17_25_ctr_j_c disable CONSTRAINT ctr_req_to_ctr_j_cod;
+ALTER TABLE s17_25_ctr_st disable CONSTRAINT ctr_req_to_ctr_jus_codv1;
+ALTER TABLE s17_25_ctr_st disable CONSTRAINT ctr_req_to_ctr_stat;
+ALTER TABLE s17_25_ctr_to_trans disable CONSTRAINT ctr_req_to_ctr_to_t;
+ALTER TABLE s17_25_ctr_c disable CONSTRAINT ctr_requests_to_ctr_comments;
+ALTER TABLE s17_25_ctr_st disable CONSTRAINT ctr_stat_cod_to_ctr_cyr_stat;
+ALTER TABLE s17_25_ctr_s_c disable CONSTRAINT ctr_stat_cod_to_ctr_cyr_statv1;
+ALTER TABLE s17_25_arl_emp disableD CONSTRAINT employee_lab;
+ALTER TABLE s17_25_ctr_d disable CONSTRAINT requests_doc;
+ALTER TABLE s17_25_ctr_r disable CONSTRAINT s17_25_ctr_req_arl_staff_fk;
+
+--truncate tables
+truncate table S17_25_ARL_EMP;
+truncate table S17_25_ARL_PROJ;
+truncate table S17_25_ARL_LABS;
+truncate table S17_25_ARL_ACC_TRANS;
+truncate table S17_25_ARL_EQUIP_FAB;
+truncate table S17_25_ARL_SUBC;
+truncate table S17_25_CTR_S_C;
+truncate table S17_25_CTR_J_C;
+truncate table S17_25_CTR_C_C;
+truncate table S17_25_CTR_R;
+truncate table S17_25_CTR_F_Tran;
+truncate table S17_25_CTR_To_Trans;
+truncate table S17_25_CTR_St;
+truncate table S17_25_CTR_C;
+truncate table S17_25_CTR_D;
+
+--insert into arl subcats table
+insert into S17_25_ARL_SUBC(category, subcategory, subcat_abbr, description)
+values(50, 31, 'Procure', 'Procurements');
+
+
+insert into S17_25_CTR_S(staff_id, staff_name, type)
+values(3,'guy', 'S17_25_CTR_Acc');
+insert into S17_25_CTR_S(staff_id, staff_name, type)
+values(4,'ad guy', 'S17_25_CTR_Ad');
+
+--insert into arl labs table
+insert into S17_25_ARL_LABS(lab_code, lab_status, status_eff_date)
+values('AISL', 'A', TO_DATE('09/01/2014 11:08:25', 'MM/DD/YYYY HH24:MI:SS'));
+
+--insert into arl employee table
+insert into S17_25_ARL_EMP(employee_name, employee_id, employee_status, status_eff_date, lab_code)
+    values('John Hancock', 4545, 'A', TO_DATE('12/01/2014 14:08:25', 'MM/DD/YYYY HH24:MI:SS'), 'AISL');
+
+
+--insert into arl projects table
+insert into S17_25_ARL_PROJ(project_abbreviation, project_status, status_eff_date)
+    values('0555-2-200-55', 'A', TO_DATE('12/01/2016 14:08:25', 'MM/DD/YYYY HH24:MI:SS'));
+
+--insert into arl eqip fabrication table
+insert into S17_25_ARL_EQUIP_FAB(system_name, system_id_number, equip_fab_id,
+lab_code, project_abbreviation)
+values('Antenna Array', 23434, 102, 'AISL', '0555-2-200-55');
+
+
+--insert into arl transaction table
+insert into S17_25_ARL_ACC_TRANS(transaction_id, document_id, amount, dtn,
+  dtv_number, req_number, pr_number, purchase_order_number, vendor_description,
+  transaction_status, transaction_type, subcategory, project_abbreviation)
+    values(2343452, 10233, 130.27, '58033', 1324, '322413B', 323219, '2016A09347',
+    'Amazon', 'A', 'EN', 31, 'v0555-2-200-55');
+
+--insert into arl status codes table
+insert into S17_25_CTR_S_C(status_seq, status_code, description, ctr_status_seq)
+    values(1, 'ENTERED', 'The CTR has been created but has not yet been submitted for approval.', 6);
+
+--insert into ctr justification table
+insert into S17_25_CTR_J_C(justification_seq, description)
+    values(1, 'Clerical or administrative error');
+
+--insert into ctr justification table
+insert into S17_25_CTR_C_C(comment_type_code, description)
+    values('J', 'Justification');
+
+--insert into ctr requests table
+insert into S17_25_CTR_R(ctr_number, employee_id, equip_fab_id, staff_id, staff_id1)
+    values(55, 4545, 102, 4, 3);
+
+--insert into ctr from transaction table
+insert into S17_25_CTR_F_Tran(ctr_number, ctr_from_trans_id, document_id, transaction_id)
+    values(55, 2544, 10233, 2343452);
+
+
+
+
+
+
+
+
+
+
+--insert into ctr to transaction table
+insert into S17_25_CTR_To_Trans(ctr_number, ctr_to_trans_id, project_abbreviation,
+  category, subcategory, amount, dtn, idtv_number, req_number, pr_number, purchase_order_number,
+  vendor_description, transaction_status, transaction_type, equip_fab_id)
+    values(55, 2545, '0555-2-200-55', 50, 50, 31, 130.5, '58033', 1324, '322413B', 323219, '2016A09347',
+    ' ', 'EN', 102);
+
+--insert into ctr statuses table
+insert into S17_25_CTR_St(ctr_status_seq, ctr_number, status_code, status_eff_date,
+  employee_id)
+    values(55, 32, 'E','25-AUG-2015 08:00am', 4545);
+
+--insert into ctr comments table
+insert into S17_25_CTR_C(ctr_number, comment_type_code, comments,
+  employee_id, comment_entry_date)
+    values(32, 'J', ' ', 4545, '25-AUG-2015 08:00am');
+
+
+--insert into ctr Documents table
+insert into S17_25_CTR_D(doc_id, name, mimetype,
+  charset, blob, comments, tags, CTR_NUMBER)
+  values(32, 'J4', 'mime', '4545', 5, 'comment', 'tags', 55 );
+
+
+-- enable triggers
+alter trigger S17_25_CTR_S_trg enable;
+alter trigger S17_25_CTR_D_ID_TRG enable;
+alter trigger ARL_EMPLOYEES_id_TRG enable;
+alter trigger S17_25_ARL_ACC_TRANS_TRG enable;
+alter trigger S17_25_ARL_SUBC_TRG enable;
+alter trigger S17_25_CTR_S_C_TRG enable;
+alter trigger S17_25_CTR_J_C_TRG enable;
+alter trigger S17_25_CTR_R_TRG enable;
+alter trigger S17_25_CTR_F_Tran_TRG enable;
+alter trigger S17_25_CTR_To_Trans_TRG enable;
+alter trigger CS17_25_CTR_St_TRG enable;
+alter trigger S17_25_CTR_C_TRG enable;
+
+
+
+
+-- enable fk constraints
+ALTER TABLE s17_25_ctr_r enable CONSTRAINT acountant_to_requests;
+ALTER TABLE s17_25_ctr_r enable CONSTRAINT admin_to_requests;
+ALTER TABLE s17_25_ctr_f_tran enable CONSTRAINT arl_acc_t_to_ctr_f_t_1;
+ALTER TABLE s17_25_ctr_f_tran enable CONSTRAINT arl_acc_t_to_ctr_from_t_2;
+ALTER TABLE s17_25_ctr_r enable CONSTRAINT arl_emp_to_ctr_req;
+ALTER TABLE s17_25_ctr_st enable CONSTRAINT arl_emp_to_ctr_stat;
+ALTER TABLE s17_25_ctr_c enable CONSTRAINT arl_employees_to_ctr_comments;
+ALTER TABLE s17_25_arl_acc_trans enable CONSTRAINT arl_equip_fab_to_arl_acc_t; 
+ALTER TABLE s17_25_ctr_f_tran enable CONSTRAINT arl_equip_fab_to_ctr_f_t;
+ALTER TABLE s17_25_ctr_r enable CONSTRAINT arl_equip_fab_to_ctr_req;
+ALTER TABLE s17_25_ctr_to_trans enable CONSTRAINT arl_equip_fab_to_ctr_to_t;
+ALTER TABLE s17_25_arl_equip_fab enable CONSTRAINT arl_labs_to_arl_quip_fa;;
+ALTER TABLE s17_25_arl_acc_trans enable CONSTRAINT arl_pro_to_arl_acc_t;
+ALTER TABLE s17_25_arl_equip_fab enable CONSTRAINT arl_pro_to_arl_equip_fab;
+ALTER TABLE s17_25_ctr_f_tran enable CONSTRAINT arl_pro_to_ctr_from_t;
+ALTER TABLE s17_25_ctr_to_trans enable CONSTRAINT arl_pro_to_ctr_tp_t;
+ALTER TABLE s17_25_arl_acc_trans enable CONSTRAINT arl_sub_to_arl_acc_t_1;
+ALTER TABLE s17_25_arl_acc_trans enable CONSTRAINT arl_sub_to_arl_acc_t_2;
+ALTER TABLE s17_25_ctr_to_trans enable CONSTRAINT arl_sub_to_ctr_to_t_1;
+ALTER TABLE s17_25_ctr_to_trans enable CONSTRAINT arl_sub_to_ctr_to_t_2;
+ALTER TABLE s17_25_ctr_c_c enable CONSTRAINT ctr_com_to_ctr_com_cod;
+ALTER TABLE s17_25_ctr_c enable CONSTRAINT ctr_com_to_ctr_com_codv1;
+ALTER TABLE s17_25_arl_acc_trans enable CONSTRAINT ctr_req_to_arl_acc_t;
+ALTER TABLE s17_25_ctr_f_tran enable CONSTRAINT ctr_req_to_ctr_from_t;
+ALTER TABLE s17_25_ctr_j_c enable CONSTRAINT ctr_req_to_ctr_j_cod;
+ALTER TABLE s17_25_ctr_st enable CONSTRAINT ctr_req_to_ctr_jus_codv1;
+ALTER TABLE s17_25_ctr_st enable CONSTRAINT ctr_req_to_ctr_stat;
+ALTER TABLE s17_25_ctr_to_trans enable CONSTRAINT ctr_req_to_ctr_to_t;
+ALTER TABLE s17_25_ctr_c enable CONSTRAINT ctr_requests_to_ctr_comments;
+ALTER TABLE s17_25_ctr_st enable CONSTRAINT ctr_stat_cod_to_ctr_cyr_stat;
+ALTER TABLE s17_25_ctr_s_c enable CONSTRAINT ctr_stat_cod_to_ctr_cyr_statv1;
+ALTER TABLE s17_25_arl_emp enableD CONSTRAINT employee_lab;
+ALTER TABLE s17_25_ctr_d enable CONSTRAINT requests_doc;
+ALTER TABLE s17_25_ctr_r enable CONSTRAINT s17_25_ctr_req_arl_staff_fk;
+
+
+
+

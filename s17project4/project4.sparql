@@ -1,0 +1,77 @@
+#Query Number 1
+# Superbowl Competitors:
+PREFIX sorg: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dw: <https://data.world/>
+
+SELECT * WHERE {
+    # this is the query hint to activate inference
+    dw:queryHint dw:inference "RDFS-SIMPLE".
+  
+    # each Superbowl is declared explicitly as a sorg:SportsEvent  
+    ?s a sorg:SportsEvent . 
+    
+    
+    # note that we do not explicitly declare the sorg:competitor - 
+    # we have nfl:winningTeam and nfl:losingTeam, which are declared 
+    # as sub-properties of sorg:competitor
+    ?s sorg:competitor ?c . 
+
+    
+    # similarly, we don't declare the teams as sorg:SportsTeam, but
+    # rather as nfl:NFLTeam - which is a subclass of sorg:SportsTeam
+    ?c a sorg:SportsTeam .
+    
+    # finally - we want to grab the label for the competitor - again,
+    # this is not declared directly, we have nfl:team_name, which is
+    # defined to be a sub-property of rdfs:label
+    ?c rdfs:label ?competitor . 
+    
+    ?s rdfs:label ?name . 
+}
+
+
+#Query Number 2
+PREFIX sorg: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dw: <https://data.world/>
+
+SELECT DISTINCT * WHERE {
+    # this is the query hint to activate inference
+    dw:queryHint dw:inference "RDFS-SIMPLE".
+    
+    ?stad a sorg:SportsActivityLocation . 
+    ?stad rdfs:location ?stadium_location . 
+    ?stad rdfs:label ?stadium_name . 
+}
+
+
+#Query Number 3
+PREFIX sorg: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dw: <https://data.world/>
+PREFIX nfl: <http://nfl.com/>
+
+SELECT ?s ?winningTeam WHERE {
+    dw:queryHint dw:inference "RDFS-SIMPLE".
+    
+    ?s nfl:winningTeam ?c . 
+
+    ?c rdfs:label ?winningTeam .
+}
+
+
+#Query Number 4
+PREFIX sorg: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dw: <https://data.world/>
+
+SELECT DISTINCT ?name WHERE {
+    # this is the query hint to activate inference
+    dw:queryHint dw:inference "RDFS-SIMPLE".
+  
+    # each Superbowl is declared explicitly as a sorg:SportsEvent  
+    ?s a sorg:SportsEvent . 
+    
+    ?s rdfs:label ?name . 
+}

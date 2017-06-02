@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B5772DA-7F59-5A6B-71BB-901BA0641EBF" name="S17_25_ARL_EQUIP_FAB">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>C511046E-052D-A48C-0702-F65DE09768DF</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SYSTEM_NAME" id="9FEFD18F-57DF-BEB9-456C-92E8DF1DFAD8">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>3D06794C-8729-D0B6-403B-38DE173163BD</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>175</dataTypeSize>
+<ownDataTypeParameters>175,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SYSTEM_ID_NUMBER" id="B13B6C8C-410E-5F1B-9252-318CDB9538C4">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>EB049924-DDC7-3865-A92E-FBCDD36089B7</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EQUIP_FAB_ID" id="18D94C82-282A-7ECA-1B40-19993EDEC66B">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>B51D92A3-B17B-6AC9-CA51-29F8B39674B4</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAB_CODE" id="27362409-BE34-77CA-C9D6-BAEB48E9BAFE">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<generatorID>D2B000B3-4B5B-C786-DB47-E5C9D2C3011C</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0BCDD394-7114-DF18-A757-61BC0591C758" referredColumn="36B00E75-7AD7-6673-3FEF-7B8CD7D30F20"/>
+</associations>
+</Column>
+<Column name="PROJECT_ABBREVIATION" id="77CF3F42-FFAE-FAD4-48E6-3E66CF5FDAB6">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<generatorID>820421F6-2382-FEB0-623C-1461A1199BFD</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5B663C8-ABC2-E74E-83EC-4091BCC9A641" referredColumn="F14EC616-B143-CDD0-1BED-731B7E7176E9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF832BF2-6051-4E50-6A1C-C33172C0BBEB" name="DIARL_EQUIP_FABRICATIONS_PK">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 02:28:17 UTC</createdTime>
+<generatorID>329AE68F-B04E-401F-DF8E-C97BD3C0F9F0</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18D94C82-282A-7ECA-1B40-19993EDEC66B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A9A3CB0-A74F-17B2-2A76-28DBE27182CC" name="ARL_LABS_TO_ARL_QUIP_FABRICATIONS">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<generatorID>A9524953-0B7E-8760-EF8F-7F5D72CD35C7</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27362409-BE34-77CA-C9D6-BAEB48E9BAFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEE8D17E-796B-4E33-CF05-1DA779CBE456" name="ARL_PROJECTS_TO_ARL_EQUIP_FABRICATIONS">
+<createdBy>xs</createdBy>
+<createdTime>2017-04-12 03:38:59 UTC</createdTime>
+<generatorID>DBBF302A-0FF3-AF91-3DB4-1431D7D94AB1</generatorID>
+<ownerDesignName>P5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77CF3F42-FFAE-FAD4-48E6-3E66CF5FDAB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
