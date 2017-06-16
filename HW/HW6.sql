@@ -1,7 +1,4 @@
 -- HW6.sql -- Homework 6
---
--- XUJIAN SHAO
--- UT EID: xs2929, UTCS username: xs2929
 -- C S 347, Spring 2017, Dr. P. Cannata
 -- Department of Computer Science, The University of Texas at Austin
 --
